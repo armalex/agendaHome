@@ -1,8 +1,11 @@
+<!--
+Commentaire pour cette partie du code template pour le composant 
+-->
 
 <div class="container">
     <div class="row">    
-        <div *ngFor="let m of moisModel">
-            <div class="col-md-1">{{m.nom}}</div>
+        <div *ngFor="let mois of moisModel;let i = index">
+            <div class="col-md-3">{{i}} {{mois.nom}}</div>
         </div>
     </div>    
 </div>
