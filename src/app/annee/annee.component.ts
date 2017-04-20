@@ -22,21 +22,11 @@ constructor() {
   
   
   nextMonth(){
-      /*
-      if (this.moisComponent.moisCourantIndice==11){
-          this.moisComponent.setMois(0);
-      }else{
-          this.moisComponent.setMois(this.moisComponent.moisCourantIndice+1) ;
-      }*/
+     
    }
 
   previousMonth(){
-      /*
-      if (this.moisComponent.moisCourantIndice==0){
-          this.moisComponent.setMois(11);
-      }else {
-         this.moisComponent.setMois(this.moisComponent.moisCourantIndice-1) ;
-      }*/
+     
   } 
  
 }
