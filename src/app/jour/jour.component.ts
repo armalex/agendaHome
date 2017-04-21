@@ -7,8 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JourComponent implements OnInit {
     
+
   jour: string;
   date: number; 
+
+    jourLibelle: String;
+    jourNumero: number;
 
   constructor() { }
 
