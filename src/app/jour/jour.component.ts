@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./jour.component.css']
 })
 export class JourComponent implements OnInit {
+    
+  jour: string;
+  date: number; 
 
   constructor() { }
 
