@@ -11,7 +11,7 @@ export class MoisService {
   list():  Observable <Array<MoisModel>>{
     return Observable.of ([
      {nom:'Janvier',nbrJours:31},
-     {nom:'Février',nbrJours:29},
+     {nom:'Fevrier',nbrJours:29},
      {nom:'Mars',nbrJours:30},
      {nom:'Avril',nbrJours:31},
      {nom:'Mai',nbrJours:30},

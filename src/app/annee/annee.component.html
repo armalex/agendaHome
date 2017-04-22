@@ -1,6 +1,67 @@
-<span class = "btn btn-primary btn-lg btn-block">
-    <h3> Nous sommes en {{annee}}  </h3>
-    <button (click)="previousMonth()">Previous</button>
-    <button  (click)="nextMonth()">Next</button>
-</span>
-<pr-mois></pr-mois>
+
+
+<!--
+Commentaire pour cette partie du code template pour le composant 
+changer une proprété html saus certaine condition 
+Le mois courrant est Févrie Fevier est en gras
+-->
+
+<div class="container">
+        <div class="row">  
+            <div class="col-md-4" align="center" style="background-color:lightgray;"  *ngFor="let mois of moisModel |slice:0:3;let i = index">
+                <div  *ngIf="i === moisCourant"> 
+                     <b><pr-mois [moisModel]="mois"></pr-mois></b>
+                </div> 
+                <div *ngIf="i !=moisCourant"> 
+                    <pr-mois [moisModel]="mois"></pr-mois>
+                </div> 
+            </div>
+        </div>
+
+
+<!--
+            <div *ngIf="i > 3">    
+                <div *ngIf="i < 6"> 
+                    <div class="col-6 col-sm-4">{{i}} {{mois.nom}}</div>
+                </div>    
+            </div>
+ -->
+
+ <div class="row">      
+    <div class="col-md-4 " align="center" style="background-color:lightblue;" *ngFor="let mois of moisModel |slice:3:6;let i = index">   
+         <div *ngIf="i+3 === moisCourant"> 
+             <b><pr-mois [moisModel]="mois"></pr-mois></b>
+         </div> 
+          <div *ngIf="i+3 !=moisCourant"> 
+               <pr-mois [moisModel]="mois"></pr-mois>
+         </div> 
+              
+    </div>
+</div>
+
+ 
+<div class="row">      
+    <div class="col-md-4 " align="center" style="background-color:lightgray;" *ngFor="let mois of moisModel|slice:6:9;let i = index">   
+         <div *ngIf="i+6 === moisCourant"> 
+             <b><div><b> {{mois.nom}}</b></div></b>
+         </div> 
+         <div *ngIf="i+6 !=moisCourant"> 
+             <pr-mois [moisModel]="mois"></pr-mois>
+         </div> 
+    </div>
+</div>
+ 
+ <div class="row">      
+    <div class="col-md-4 " align="center" style="background-color:lightblue;" *ngFor="let mois of moisModel|slice:9:12;let i = index">   
+        <div *ngIf="i+9 === moisCourant"> 
+            <b><pr-mois [moisModel]="mois"></pr-mois></b>
+        </div> 
+        <div *ngIf="i+9 !=moisCourant"> 
+             <pr-mois [moisModel]="mois"></pr-mois>
+        </div> 
+    </div>
+</div>
+
+
+ </div>
+

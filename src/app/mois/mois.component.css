@@ -2,3 +2,10 @@ rectangle{
 	height:100px;
 	background:#069;
 }
+
+div#blocnews {
+	float:right;
+	width:100px;
+	height:100px;
+	background-color:#FF3300;
+	}

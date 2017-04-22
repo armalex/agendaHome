@@ -1,43 +1,17 @@
 <!--
 Commentaire pour cette partie du code template pour le composant 
+<figure (click)="clicked()">
+  <img [src]="getMoisImageUrl()" [alt]="moisModel.name"/>
+  <figcaption>{{ moisModel.nom }}</figcaption>
+</figure>
+<div>{{moisModel.nom}} <br>{{moisModel.nbrJours}} jours</div>
+<figcaption>{{ moisModel.nom }}</figcaption>
 -->
 
-<div class="container">
-        <div class="row">  
-            <div class="col-md-4"  style="background-color:lightgray;"  *ngFor="let mois of moisModel;let i = index">
-                 <div *ngIf="i < 3">    
-                    {{mois.nom}}
-                </div>
-            </div>
-        </div>
+
+<figure (click)="clicked()">
+  <img [src]="getMoisImageUrl()" [alt]="moisModel.name"/>
+</figure>
 
 
-<!--
-            <div *ngIf="i > 3">    
-                <div *ngIf="i < 6"> 
-                    <div class="col-6 col-sm-4">{{i}} {{mois.nom}}</div>
-                </div>    
-            </div>
- -->
-
- <div class="row">      
-    <div class="col-md-4 " style="background-color:lightblue;" *ngFor="let mois of moisModel;let i = index">   
-        <div *ngIf="i > 3">
-            <div *ngIf="i < 6"> 
-                {{mois.nom}}
-            </div>
-        </div> 
-    </div>
-</div>
-
- 
-<div class="row">      
-    <div class="col-md-4 " style="background-color:yellow;" *ngFor="let mois of moisModel;let i = index">   
-        <div *ngIf="i > 8">
-            {{mois.nom}}
-        </div> 
-    </div>
-</div>
-
- </div>
 
