@@ -1,0 +1,72 @@
+
+/* --- Base --- */
+* { ... }                /* Tous les tags */
+p { ... }                /* paragraphe */
+h1, h2, h3 { ... }       /* Titre 1 ou titre 2 ou titre 3 */
+
+/* --- Classe ou identifiant --- */
+h1.letitre { ... }       /* Titre 1 dont la classe est "letitre" */
+h1#letitre { ... }       /* Titre 1 dont l'ID est "letitre" */
+.letitre { ... }         /* Tout Tag dont la classe est "letitre" */
+#letitre { ... }         /* Le Tag dont l'ID est "letitre" */
+
+/* --- Lien --- */
+a:link { ... }           /* Lien non visité */
+a:visited { ... }        /* Lien visité */
+a:hover, a:focus { ... } /* Lien survolé ou ayant le focus */
+a:active { ... }         /* Lien actif (état cliqué) */
+
+/* --- autre Pseudo-classe --- */
+p:first-letter { ... }   /* Premier caractère de l'élément P */
+div:first-line { ... }   /* Première ligne de l'élément DIV */
+div:first-child { ... }  /* Premier élément d'un bloc DIV */
+
+/* --- Base --- */
+div p { ... }            /* Tous les tags p contenu dans un tag div */
+div.cl p { ... }         /* Tous les tags p contenu dans un tag div de classe "cl" */
+div#id p { ... }         /* Tous les tags p contenu dans un tag div d'ID "id" */
+
+/* --- Hierachie évoluée --- */
+div > p { ... }          /* Tous les tags p directement contenu dans un tag div */
+div + p { ... }          /* Tous les tags p précédé par un tag div */
+div:lang(fr) { ... }     /* Tag div dont le contenu est déclaré français */
+
+/* --- Sélecteur sur Attribut à partir de IE7 --- */
+div[class] { ... }       /* Tous les tags div contenant un attribut "class" */
+div[width][height] { ... } /* Tous les tags div contenant un attribut "width" et "height" */
+div[class="cl"] { ... }  /* Tous les tags div contenant un attribut "class" 
+                            égal à "cl" */
+div[class^="cl"] { ... } /* Tous les tags div contenant un attribut "class"
+                            qui débute par "cl" */
+div[class$="cl"] { ... } /* Tous les tags div contenant un attribut "class"
+                            qui se termine par "cl" */
+div[class*="cl"] { ... } /* Tous les tags div contenant un attribut "class"
+                            qui contient "cl" */
+div[class~="cl"] { ... } /* Tous les tags div contenant un attribut "class"
+                            dont l'une des valeurs est "cl" */
+
+
+font-family: "Times New Roman", serif ;
+font-family: Georgia, serif ;
+font-family: Arial, sans-serif ;
+font-family: Helvetica, Verdana, sans-serif ;
+font-family: "Courier New", monospace ;
+
+font-size: 1em ;
+font-size: 12px ;
+font-size: 100% ;
+font-size: 12pt ;
+font-size: 12px ;
+
+color: white ;
+color: #FFFFFF ;
+color: rgb(255,255,255) ;
+color: transparent ;
+
+font-style: normal ;
+font-style: italic ;
+font-style: oblique ;
+
+font-weight: normal ;
+font-weight: bold ;
+font-weight: bolder ;
