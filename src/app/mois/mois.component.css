@@ -9,3 +9,25 @@ div#blocnews {
 	height:100px;
 	background-color:#FF3300;
 	}
+div>p {
+	float:left;
+	font-family: Verdana, sans-serif; 
+        font-weight:bold;
+        color:white;
+        font-size: 70%;
+        }  
+
+.col-sm-1>p {
+        color:white;
+        background-color:Darkgray;
+        color:black;
+}
+
+p.dayweek{
+    color:black;
+}
+
+dayweekend {
+    color:red; 
+}
+        

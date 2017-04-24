@@ -14,7 +14,7 @@ export class MoisComponent implements OnInit {
 
 @Output() ponyClicked = new EventEmitter<MoisModel>();
     
-
+ 
   constructor() { }
 
 

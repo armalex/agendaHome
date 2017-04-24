@@ -9,9 +9,77 @@ Commentaire pour cette partie du code template pour le composant
 -->
 
 
+<div class="col-xs-12" style="color:darkgray;background-color:lightgray;" align="center"><b>{{ moisModel.nom| uppercase }}</b> </div> 
+
+
+<div class="row" style="margin-top: 1px;" >
+    <div class="col-sm-1"><p></p></div>
+    <div class="col-sm-1"></div>  
+    <div class="col-sm-1">Lu</div>
+    <div class="col-sm-1">Ma</div>
+    <div class="col-sm-1">Me</div>
+    <div class="col-sm-1">Je</div>
+    <div class="col-sm-1">Ve</div>
+    <div class="col-sm-1">Sa</div>
+    <div class="col-sm-1">Di</div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-1"></div> 
+    <div class="col-sm-1"></div> 
+</div>
+
+<div class="row" style="margin-top: 1px;" >
+  <div class="col-sm-1"  style="color:white;background-color:lightgray;"></div>
+  <div class="col-sm-1"  style="color:white;background-color:lightgray;"></div>  
+  <div class="col-sm-1"  style="color:white;background-color:lightblue;">1</div>
+  <div class="col-sm-1"  style="color:white;background-color:lightblue;">2</div>
+  <div class="col-sm-1"  style="color:white;background-color:lightblue;">3</div>
+  <div class="col-sm-1"  style="color:white;background-color:lightblue;">4</div>
+  <div class="col-sm-1"  style="color:white;background-color:lightblue;">5</div>
+  <div class="col-sm-1"  style="color:red;background-color:lightblue;">6</div>
+  <div class="col-sm-1"  style="color:red;background-color:lightblue;">7</div>
+  <div class="col-sm-1"  style="color:white;background-color:lightgray;"></div>
+  <div class="col-sm-1"  style="color:white;background-color:lightgray;"></div> 
+  <div class="col-sm-1"  style="color:white;background-color:lightgray;"></div> 
+</div>
+    
+<div class="row" style="margin-top: 1px" >
+  <div class="col-sm-1"  style="color:white;background-color:lightgray;"></div>
+  <div class="col-sm-1"  style="color:white;background-color:lightgray;"></div>  
+  <div class="col-sm-1"  style="color:white;background-color:lightblue;">1</div>
+  <div class="col-sm-1"  style="color:white;background-color:lightblue;">2</div>
+  <div class="col-sm-1"  style="color:white;background-color:lightblue;">3</div>
+  <div class="col-sm-1"  style="color:white;background-color:lightblue;">4</div>
+  <div class="col-sm-1"  style="color:white;background-color:lightblue;">5</div>
+  <div class="col-sm-1"  style="color:red;background-color:lightblue;">6</div>
+  <div class="col-sm-1"  style="color:red;background-color:lightblue;">7</div>
+  <div class="col-sm-1"  style="color:white;background-color:lightgray;"></div>
+  <div class="col-sm-1"  style="color:white;background-color:lightgray;"></div> 
+  <div class="col-sm-1"  style="color:white;background-color:lightgray;"></div> 
+</div>    
+
+
+<!--
+<div class="row">  
+    <div *ngFor="let mois of moisModel.nbrJours;let i = index">
+        <div class="col-sm-1"  style="color:white;background-color:darkblue;"> {{ moisModel.nbrJours }}</div> 
+    </div>
+</div>
+
+-->
+
+<!--
+Boucle sur les jours pour afficher le bon premier jour
+<!--
+
+
+Affichage des jours
+-->
+
 <figure (click)="clicked()">
   <img [src]="getMoisImageUrl()" [alt]="moisModel.name"/>
+  <figcaption>{{ moisModel.nbrJours }}</figcaption>
 </figure>
+
 
 
 

@@ -5,9 +5,9 @@
  */
 
 
-export interface jourModel{
+export interface JourModel{
     nom: string;
+    premier: boolean;
     jourDuMois: number;
     saint: string;
-        
-}
+ }
