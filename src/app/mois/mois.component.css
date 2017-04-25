@@ -38,12 +38,6 @@ div>p {
        font-size: 60%;
 }
 
-.mois-en-forme[lang]{
-    color:blue;
-    background-color:lightgray;
-   } 
-
-
 p.dayweek{
     color:black;
 }
