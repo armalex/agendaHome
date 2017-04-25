@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { MoisComponent } from '../mois/mois.component';
+import { MoisService } from '../mois.service';
+import { MoisModel } from '../../models/mois.model';
 
 @Component({
   selector: 'pr-annee',
@@ -10,22 +12,23 @@ export class AnneeComponent implements OnInit {
   
 annee :string = '2017';
 moisComponent : MoisComponent;
-nbrJours: number = 31;
- 
-constructor() {
-}
+@Input() moisCourant: number = 10;
 
+moisModel: Array<MoisModel> = [];
+ 
+constructor(private moisService: MoisService) {
+}
   ngOnInit() {
-   // this.nbrJours = this.moisComponent.moisCourant.nbrJours;
+    this.moisService.list().subscribe(moisModel => this.moisModel = moisModel);
   
   }
   
   
-  nextMonth(){
+  nextYear(){
      
-   }
+  }
 
-  previousMonth(){
+  previousYear(){
      
   } 
  

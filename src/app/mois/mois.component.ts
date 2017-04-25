@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input,Output,EventEmitter} from '@angular/core';
 import { MoisModel } from '../../models/mois.model';
 import { MoisService } from '../mois.service';
 
@@ -9,14 +9,25 @@ import { MoisService } from '../mois.service';
 })
 export class MoisComponent implements OnInit {
     
-moisModel: Array<MoisModel> = [];
-    
+@Input() moisModel: MoisModel;
+@Input() moisIndice:number;
 
-  constructor(private moisService: MoisService) { }
+@Output() ponyClicked = new EventEmitter<MoisModel>();
+    
+ 
+  constructor() { }
 
 
   ngOnInit() {
-     this.moisService.list().subscribe(moisModel => this.moisModel = moisModel);
+     
      }
+     
+  getMoisImageUrl() {
+    return `assets/images/mois-${this.moisModel.nom.toLowerCase()}.png`;
+  }
+
+  clicked() {
+    this.ponyClicked.emit(this.moisModel);
+  }
   
 }

@@ -1,16 +1,17 @@
 import { Injectable } from '@angular/core';
-import { MoisModel } from '../models/mois.model';
 import { Observable } from 'rxjs/Observable';
+import { JourModel } from '../models/jour.model';
 import 'rxjs/add/observable/of';
 
 @Injectable()
-export class MoisService {
+export class JoursService {
 
   constructor() { }
-  
-  list():  Observable <Array<MoisModel>>{
+
+
+ list():  Observable <Array<JourModel>>{
     return Observable.of ([
-     {nom:'Janvier',nbrJours:31,premierJour:'Dimanche'},
+     {nom:'Janvier',premier:'31',jourDuMois:'Dimanche'},
      {nom:'Fevrier',nbrJours:28,premierJour:'Mercredi'},
      {nom:'Mars',nbrJours:31,premierJour:'Mercredi'},
      {nom:'Avril',nbrJours:30,premierJour:'Samedi'},
@@ -24,4 +25,5 @@ export class MoisService {
      {nom:'Décembre',nbrJours:31,premierJour:'Vendredi'},
     ]);
   }
+
 }
