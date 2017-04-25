@@ -18,10 +18,16 @@ div>p {
         }  
 
 .mois-en-forme {
-       color:black;
+       color:white;
        font-weight:bold;
-       background-color:lightgray;
+       background-color:black;
        font-size: 60%;
+}
+
+.mois-numero {
+       color:white;
+       background-color:lightblue;
+       font-weight:bold;
 }
 
 .mois-en-forme-jour {
