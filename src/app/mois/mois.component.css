@@ -14,14 +14,28 @@ div>p {
 	font-family: Verdana, sans-serif; 
         font-weight:bold;
         color:white;
-        font-size: 70%;
+        font-size: 60%;
         }  
 
-.col-sm-1>p {
-        color:white;
-        background-color:Darkgray;
-        color:black;
+.mois-en-forme {
+       color:black;
+       font-weight:bold;
+       background-color:lightgray;
+       font-size: 60%;
 }
+
+.mois-en-forme-jour {
+       color:black;
+       font-weight:bold;
+       background-color:lightblue;
+       font-size: 60%;
+}
+
+.mois-en-forme[lang]{
+    color:blue;
+    background-color:lightgray;
+   } 
+
 
 p.dayweek{
     color:black;
