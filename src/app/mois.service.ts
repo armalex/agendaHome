@@ -5,7 +5,7 @@ import 'rxjs/add/observable/of';
 
 @Injectable()
 export class MoisService {
-
+  moisModel:MoisModel;
   constructor() { }
   
   list():  Observable <Array<MoisModel>>{
@@ -23,5 +23,10 @@ export class MoisService {
      {nom:'Novembre',nbrJours:30,premierJour:'Mercredi'},
      {nom:'Décembre',nbrJours:31,premierJour:'Vendredi'},
     ]);
+  }
+  
+  mois(mois:MoisModel):MoisModel{
+      // calsul du mois a retourner en fonction du parametre
+      return this.moisModel;
   }
 }
