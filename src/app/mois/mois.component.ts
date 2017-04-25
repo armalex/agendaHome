@@ -24,7 +24,7 @@ listeJours:string[];
    
 
   ngOnInit() {
-      this.moisService.debutMois().subscribe(listeJours => this.listeJours = listeJours);
+      this.moisService.debutMois(this.moisModel.nom).subscribe(listeJours => this.listeJours = listeJours);
       //this.listeJours.push(this.jours);
      }
      
