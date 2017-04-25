@@ -9,5 +9,5 @@ export interface MoisModel {
     nom: string ;
     nbrJours: number;
     premierJour:string ;
-    jourModel:Array<JourModel>;
-}
+    indiceDepart : number;
+ }
