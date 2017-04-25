@@ -9,7 +9,7 @@ Commentaire pour cette partie du code template pour le composant
 -->
 
 <div class="container" style="border:1px solid dimgray;background-color:lightgray;">
-    <div class="row" style="margin-top: 0px;background-color:lightgray" >
+<!--    <div class="row" style="margin-top: 0px;background-color:lightgray" >
         <div class="col-sm-4 " ><b></b></div> 
         <div class="col-sm-4 " ><b>{{ moisModel.nom| uppercase }}</b></div> 
         <div class="col-sm-4 "><b></b></div> 
@@ -23,25 +23,75 @@ Commentaire pour cette partie du code template pour le composant
         <div class="col-sm-1 mois-en-forme" >Di</div>
         <div class="col-sm-3 " ></div>
        
+    </div>-->
+    
+    <div class="row" style="margin-top: 0px;"> 
+        <div class="col-sm-4 " ><b></b></div> 
+        <div class="col-sm-4 " ><b>{{ moisModel.nom| uppercase }}</b></div> 
+        <div class="col-sm-4 "><b></b></div> 
+        <div class="col-sm-1"></div>
+        <div class="col-sm-1"></div>  
+        <div class="col-sm-1 mois-en-forme" *ngFor="let semaine of semaines">{{semaine}}</div>
+<!--        <div class="col-sm-1 mois-numero" *ngFor="let jour of jours |slice:7:14">{{jour}}</div>-->
+        <div class="col-sm-1"></div>
+        <div class="col-sm-1"></div> 
+        <div class="col-sm-1"></div> 
+    </div>
+    
+    
+    <div class="row" style="margin-top: 0px;"> 
+        <div class="col-sm-1"></div>
+        <div class="col-sm-1"></div>  
+        <div class="col-sm-1 mois-numero" *ngFor="let jour of jours |slice:0:7">{{jour}}</div>
+<!--        <div class="col-sm-1 mois-numero" *ngFor="let jour of jours |slice:7:14">{{jour}}</div>-->
+        <div class="col-sm-1"></div>
+        <div class="col-sm-1"></div> 
+        <div class="col-sm-1"></div> 
+    </div>
+    
+    <div class="row" style="margin-top: 0px;"> 
+        <div class="col-sm-1"></div>
+        <div class="col-sm-1"></div>  
+        <div class="col-sm-1 mois-numero" *ngFor="let jour of jours |slice:7:14">{{jour}}</div>
+<!--        <div class="col-sm-1 mois-numero" *ngFor="let jour of jours |slice:7:14">{{jour}}</div>-->
+        <div class="col-sm-1"></div>
+        <div class="col-sm-1"></div> 
+        <div class="col-sm-1"></div> 
+    </div>
+    
+
+<div class="row" style="margin-top: 0px;"> 
+        <div class="col-sm-1"></div>
+        <div class="col-sm-1"></div>  
+        <div class="col-sm-1 mois-numero" *ngFor="let jour of jours |slice:14:21">{{jour}}</div>
+<!--        <div class="col-sm-1 mois-numero" *ngFor="let jour of jours |slice:7:14">{{jour}}</div>-->
+        <div class="col-sm-1"></div>
+        <div class="col-sm-1"></div> 
+        <div class="col-sm-1"></div> 
     </div>
 
-    <div class="row " style="margin-top: 0px;" >
-      <div class="col-sm-1"></div>
-      <div class="col-sm-1"  style="color:white;background-color:lightgray;"></div>  
-      <div class="col-sm-1 mois-numero">1</div>
-      <div class="col-sm-1"  style="color:white;background-color:lightblue;">2</div>
-      <div class="col-sm-1"  style="color:white;background-color:lightblue;">3</div>
-      <div class="col-sm-1"  style="color:white;background-color:lightblue;">4</div>
-      <div class="col-sm-1"  style="color:white;background-color:lightblue;">5</div>
-      <div class="col-sm-1"  style="color:red;background-color:lightblue;">6</div>
-      <div class="col-sm-1"  style="color:red;background-color:lightblue;">7</div>
-      <div class="col-sm-1"  style="color:white;background-color:lightgray;"></div>
-      <div class="col-sm-1"  style="color:white;background-color:lightgray;"></div> 
-      <div class="col-sm-1"  style="color:white;background-color:lightgray;"></div> 
-
+    <div class="row" style="margin-top: 0px;"> 
+        <div class="col-sm-1"></div>
+        <div class="col-sm-1"></div>  
+        <div class="col-sm-1 mois-numero" *ngFor="let jour of jours |slice:21:28">{{jour}}</div>
+<!--        <div class="col-sm-1 mois-numero" *ngFor="let jour of jours |slice:7:14">{{jour}}</div>-->
+        <div class="col-sm-1"></div>
+        <div class="col-sm-1"></div> 
+        <div class="col-sm-1"></div> 
     </div>
-
-    <div class="row" style="margin-top: 0px" >
+    
+    
+    <div class="row" style="margin-top: 0px;"> 
+        <div class="col-sm-1"></div>
+        <div class="col-sm-1"></div>  
+        <div class="col-sm-1 mois-numero" *ngFor="let jour of jours |slice:28:38">{{jour}}</div>
+<!--        <div class="col-sm-1 mois-numero" *ngFor="let jour of jours |slice:28:31">{{jour}}</div>-->
+        <div class="col-sm-1"></div>
+        <div class="col-sm-1"></div> 
+        <div class="col-sm-1"></div> 
+    </div>
+    
+<!--    <div class="row" style="margin-top: 0px" >
       <div class="col-sm-1"  style="color:white;background-color:lightgray;"></div>
       <div class="col-sm-1"  style="color:white;background-color:lightgray;"></div>  
       <div class="col-sm-1"  style="color:white;background-color:lightblue;">1</div>
@@ -97,17 +147,17 @@ Commentaire pour cette partie du code template pour le composant
       <div class="col-sm-1"  style="color:white;background-color:lightgray;"></div>
       <div class="col-sm-1"  style="color:white;background-color:lightgray;"></div> 
       <div class="col-sm-1"  style="color:white;background-color:lightgray;"></div> 
-    </div> 
+    </div> -->
 </div>
 
-<!--
-<div class="row">  
-    <div *ngFor="let mois of moisModel.nbrJours;let i = index">
-        <div class="col-sm-1"  style="color:white;background-color:darkblue;"> {{ moisModel.nbrJours }}</div> 
+
+<!--<div class="row">  
+    <div *ngFor="let jour of jours;let i = index">
+        <div class="col-sm-1"  style="color:white;background-color:darkblue;"> {{jour}}</div> 
     </div>
-</div>
+</div>-->
 
--->
+
 
 <!--
 Boucle sur les jours pour afficher le bon premier jour
