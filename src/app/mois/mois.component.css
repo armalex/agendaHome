@@ -1,21 +1,6 @@
-rectangle{
-	height:100px;
-	background:#069;
-}
-
-div#blocnews {
-	float:right;
-	width:100px;
-	height:100px;
-	background-color:#FF3300;
-	}
-div>p {
-	float:left;
-	font-family: Verdana, sans-serif; 
-        font-weight:bold;
-        color:white;
-        font-size: 60%;
-        }  
+/*
+commentaire
+*/
 
 .mois-en-forme {
        color:white;
@@ -26,7 +11,7 @@ div>p {
 
 .mois-numero {
        color:blue;
-       background-color:lightblue;
+       background-color:white;
        font-weight:bold;
        font-size: 60%;
 }
@@ -49,24 +34,30 @@ dayweekend {
 .bg-mois-printemps{
     background-image:url(../../assets/images/bg-mois-printemps.png);
     height:160px;
-}
+    border:2px solid white;
+  }
 
 .bg-mois-hiver{
     background-image:url(../../assets/images/bg-mois-hiver.png);
     height:160px;
+    border:2px solid white;
 }
 
 .bg-mois-ete{
     background-image:url(../../assets/images/bg-mois-ete.png);
-    
     height:160px;
+    border:2px solid white;
 }
 
 .bg-mois-automne{
     background-image:url(../../assets/images/bg-mois-automne.png);
     height:160px;
+    border:2px solid white;
 }
 
-.janvier_Caption{
-    
+.janvier_caption{
+   color:white;
+  /* background-color:blue;*/
+   font-weight:bold;
+   border:0px solid white;
 }

@@ -18,15 +18,6 @@ Le mois courrant est Févrie Fevier est en gras
             </div>
         </div>
 
-
-<!--
-            <div *ngIf="i > 3">    
-                <div *ngIf="i < 6"> 
-                    <div class="col-6 col-sm-4">{{i}} {{mois.nom}}</div>
-                </div>    
-            </div>
- -->
-
  <div class="row">      
     <div class="col-md-4 " align="center" style="background-color:darktgray;" *ngFor="let mois of moisModel |slice:3:6;let i = index">   
          <div *ngIf="i+3 === moisCourant"> 
