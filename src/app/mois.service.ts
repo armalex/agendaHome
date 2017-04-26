@@ -27,7 +27,9 @@ export class MoisService {
   
   debutMois(nomMois:string):Observable<string[]>{
       // calsul du mois a retourner en fonction du parametre
-      //this.moisModel={nom:'Fevrier',nbrJours:28,premierJour:'Mercredi',indiceDepart:3};
+      // this.moisModel={nom:'Fevrier',nbrJours:28,premierJour:'Mercredi',indiceDepart:3};
+      
+      // let essai: string = "0";
       
       if (nomMois.match("Janvier")){
           return Observable.of (['','','','','','','1','2','3','4','5','6','7','8','9',

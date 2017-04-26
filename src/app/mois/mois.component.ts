@@ -31,8 +31,11 @@ saison: string ='bg-mois-printemps';
     return `mois-`
   }
 
-  clicked() {
+  onButtonClick(event) {
     this.moisClicked.emit(this.moisModel);
+        console.log(this.moisModel);
+        console.log(event);
+    
   }
   
 }

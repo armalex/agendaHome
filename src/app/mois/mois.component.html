@@ -11,10 +11,10 @@ Commentaire pour cette partie du code template pour le composant
 <div class="container {{moisModel.saisonImg}}">
 
     
-    <div class="row " style="margin-top: 0px;"> 
+    <div (click)="onButtonClick($event)" class="row " style="margin-top: 0px;" > 
         <div class="col-sm-1 "></div> 
         <div class="col-sm-1 "></div> 
-        <div class="col-sm-4 janvier_caption">{{ moisModel.nom| uppercase }}</div>
+        <div class="col-sm-4 janvier_caption" >  {{ moisModel.nom| uppercase }}</div>
          <div class="col-sm-3 janvier_caption">2017</div> 
         <div class="col-sm-1 janvier_caption"></div> 
         <div class="col-sm-1"></div> 
@@ -22,7 +22,8 @@ Commentaire pour cette partie du code template pour le composant
         
     </div>
     
-<!--     <div class="row " style="margin-top: 0px;">     
+<!--    
+        <div class="row " style="margin-top: 0px;">     
         <div class="col-sm-1"></div>
         <div class="col-sm-1"></div>  
         <div class="col-sm-1 janvier_caption"></div> 
@@ -34,68 +35,68 @@ Commentaire pour cette partie du code template pour le composant
         <div class="col-sm-1"></div> 
         <div class="col-sm-1"></div> 
     </div>-->
-    <div class="row" style="margin-top: 0px;">     
+
+    <div (click)="onButtonClick($event)" class="row" style="margin-top: 0px;">     
         <div class="col-sm-1"></div>
         <div class="col-sm-1"></div>  
-        <div class="col-sm-1 mois-en-forme" *ngFor="let semaine of semaines">{{semaine}}</div>
+        <div (click)="onButtonClick($event)" class="col-sm-1 mois-en-forme" *ngFor="let semaine of semaines">{{semaine}}</div>
         <div class="col-sm-1"></div>
         <div class="col-sm-1"></div> 
         <div class="col-sm-1"></div> 
     </div>
     
-    
-    <div class="row" style="margin-top: 0px;"> 
+ 
+    <div (click)="onButtonClick($event)" class="row" style="margin-top: 0px;"> 
         <div class="col-sm-1"></div>
         <div class="col-sm-1"></div>  
-        <div class="col-sm-1 mois-numero" *ngFor="let jour of listeJours |slice:0:7">{{jour}}</div>
+        <div (click)="onButtonClick($event)" class="col-sm-1 mois-numero" *ngFor="let jour of listeJours |slice:0:7">{{jour}}</div>
         <div class="col-sm-1"></div>
         <div class="col-sm-1"></div> 
         <div class="col-sm-1"></div> 
     </div>
     
-    <div class="row" style="margin-top: 0px;"> 
+    <div (click)="onButtonClick($event)" class="row" style="margin-top: 0px;"> 
         <div class="col-sm-1"></div>
         <div class="col-sm-1"></div>  
-        <div class="col-sm-1 mois-numero" *ngFor="let jour of listeJours |slice:7:14">{{jour}}</div>
+        <div (click)="onButtonClick($event)" class="col-sm-1 mois-numero" *ngFor="let jour of listeJours |slice:7:14">{{jour}}</div>
         <div class="col-sm-1"></div>
         <div class="col-sm-1"></div> 
         <div class="col-sm-1"></div> 
     </div>
     
 
-<div class="row" style="margin-top: 0px;"> 
+    <div (click)="onButtonClick($event)" class="row" style="margin-top: 0px;"> 
         <div class="col-sm-1"></div>
         <div class="col-sm-1"></div>  
-        <div class="col-sm-1 mois-numero" *ngFor="let jour of listeJours |slice:14:21">{{jour}}</div>
+        <div (click)="onButtonClick($event)" class="col-sm-1 mois-numero" *ngFor="let jour of listeJours |slice:14:21">{{jour}}</div>
 <!--        <div class="col-sm-1 mois-numero" *ngFor="let jour of jours |slice:7:14">{{jour}}</div>-->
         <div class="col-sm-1"></div>
         <div class="col-sm-1"></div> 
         <div class="col-sm-1"></div> 
     </div>
 
-    <div class="row" style="margin-top: 0px;"> 
+    <div (click)="onButtonClick($event)" class="row" style="margin-top: 0px;"> 
         <div class="col-sm-1"></div>
         <div class="col-sm-1"></div>  
-        <div class="col-sm-1 mois-numero" *ngFor="let jour of listeJours |slice:21:28">{{jour}}</div>
+        <div (click)="onButtonClick($event)" class="col-sm-1 mois-numero" *ngFor="let jour of listeJours |slice:21:28">{{jour}}</div>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-1"></div> 
+        <div class="col-sm-1"></div> 
+    </div>
+        
+    <div (click)="onButtonClick($event)" class="row" style="margin-top: 0px;"> 
+        <div class="col-sm-1"></div>
+        <div class="col-sm-1"></div>  
+        <div (click)="onButtonClick($event)" class="col-sm-1 mois-numero" *ngFor="let jour of listeJours |slice:28:35">{{jour}}</div>
         <div class="col-sm-1"></div>
         <div class="col-sm-1"></div> 
         <div class="col-sm-1"></div> 
     </div>
     
-    
-    <div class="row" style="margin-top: 0px;"> 
+    <div (click)="onButtonClick($event)" class="row" style="margin-top: 0px;"> 
         <div class="col-sm-1"></div>
         <div class="col-sm-1"></div>  
-        <div class="col-sm-1 mois-numero" *ngFor="let jour of listeJours |slice:28:35">{{jour}}</div>
-        <div class="col-sm-1"></div>
-        <div class="col-sm-1"></div> 
-        <div class="col-sm-1"></div> 
-    </div>
-    
-    <div class="row" style="margin-top: 0px;"> 
-        <div class="col-sm-1"></div>
-        <div class="col-sm-1"></div>  
-        <div class="col-sm-1 mois-numero" *ngFor="let jour of listeJours |slice:35:42">{{jour}}</div>
+        <div (click)="onButtonClick($event)" class="col-sm-1 mois-numero" *ngFor="let jour of listeJours |slice:35:42">{{jour}}</div>
         <div class="col-sm-1"></div>
         <div class="col-sm-1"></div> 
         <div class="col-sm-1"></div> 
