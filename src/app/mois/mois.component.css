@@ -25,7 +25,7 @@ div>p {
 }
 
 .mois-numero {
-       color:white;
+       color:blue;
        background-color:lightblue;
        font-weight:bold;
        font-size: 60%;
@@ -45,4 +45,28 @@ p.dayweek{
 dayweekend {
     color:red; 
 }
-        
+
+.bg-mois-printemps{
+    background-image:url(../../assets/images/bg-mois-printemps.png);
+    height:160px;
+}
+
+.bg-mois-hiver{
+    background-image:url(../../assets/images/bg-mois-hiver.png);
+    height:160px;
+}
+
+.bg-mois-ete{
+    background-image:url(../../assets/images/bg-mois-ete.png);
+    
+    height:160px;
+}
+
+.bg-mois-automne{
+    background-image:url(../../assets/images/bg-mois-automne.png);
+    height:160px;
+}
+
+.janvier_Caption{
+    
+}

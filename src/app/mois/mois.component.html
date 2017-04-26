@@ -8,17 +8,16 @@ Commentaire pour cette partie du code template pour le composant
 <figcaption>{{ moisModel.nom }}</figcaption>
 -->
 
-<div class="container" style="border:1px solid dimgray;background-color:lightgray;">
+<div class="container {{moisModel.saisonImg}}" style="border:2px solid dimgray;background-color:white;">
 
     
-    <div class="row" style="margin-top: 0px;"> 
+    <div class="row " style="margin-top: 0px;"> 
         <div class="col-sm-4 " ><b></b></div> 
         <div class="col-sm-4 " ><b>{{ moisModel.nom| uppercase }}</b></div> 
         <div class="col-sm-4 "><b></b></div> 
         <div class="col-sm-1"></div>
         <div class="col-sm-1"></div>  
         <div class="col-sm-1 mois-en-forme" *ngFor="let semaine of semaines">{{semaine}}</div>
-<!--        <div class="col-sm-1 mois-numero" *ngFor="let jour of jours |slice:7:14">{{jour}}</div>-->
         <div class="col-sm-1"></div>
         <div class="col-sm-1"></div> 
         <div class="col-sm-1"></div> 
@@ -29,7 +28,6 @@ Commentaire pour cette partie du code template pour le composant
         <div class="col-sm-1"></div>
         <div class="col-sm-1"></div>  
         <div class="col-sm-1 mois-numero" *ngFor="let jour of listeJours |slice:0:7">{{jour}}</div>
-<!--        <div class="col-sm-1 mois-numero" *ngFor="let jour of listeJours |slice:7:14">{{jour}}</div>-->
         <div class="col-sm-1"></div>
         <div class="col-sm-1"></div> 
         <div class="col-sm-1"></div> 
@@ -39,7 +37,6 @@ Commentaire pour cette partie du code template pour le composant
         <div class="col-sm-1"></div>
         <div class="col-sm-1"></div>  
         <div class="col-sm-1 mois-numero" *ngFor="let jour of listeJours |slice:7:14">{{jour}}</div>
-<!--        <div class="col-sm-1 mois-numero" *ngFor="let jour of jours |slice:7:14">{{jour}}</div>-->
         <div class="col-sm-1"></div>
         <div class="col-sm-1"></div> 
         <div class="col-sm-1"></div> 
@@ -60,7 +57,6 @@ Commentaire pour cette partie du code template pour le composant
         <div class="col-sm-1"></div>
         <div class="col-sm-1"></div>  
         <div class="col-sm-1 mois-numero" *ngFor="let jour of listeJours |slice:21:28">{{jour}}</div>
-<!--        <div class="col-sm-1 mois-numero" *ngFor="let jour of jours |slice:7:14">{{jour}}</div>-->
         <div class="col-sm-1"></div>
         <div class="col-sm-1"></div> 
         <div class="col-sm-1"></div> 
@@ -71,7 +67,6 @@ Commentaire pour cette partie du code template pour le composant
         <div class="col-sm-1"></div>
         <div class="col-sm-1"></div>  
         <div class="col-sm-1 mois-numero" *ngFor="let jour of listeJours |slice:28:35">{{jour}}</div>
-<!--        <div class="col-sm-1 mois-numero" *ngFor="let jour of jours |slice:28:31">{{jour}}</div>-->
         <div class="col-sm-1"></div>
         <div class="col-sm-1"></div> 
         <div class="col-sm-1"></div> 
@@ -81,7 +76,6 @@ Commentaire pour cette partie du code template pour le composant
         <div class="col-sm-1"></div>
         <div class="col-sm-1"></div>  
         <div class="col-sm-1 mois-numero" *ngFor="let jour of listeJours |slice:35:42">{{jour}}</div>
-<!--        <div class="col-sm-1 mois-numero" *ngFor="let jour of jours |slice:28:31">{{jour}}</div>-->
         <div class="col-sm-1"></div>
         <div class="col-sm-1"></div> 
         <div class="col-sm-1"></div> 

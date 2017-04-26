@@ -10,18 +10,18 @@ export class MoisService {
   
   list():  Observable <Array<MoisModel>>{
     return Observable.of ([
-     {nom:'Janvier',nbrJours:31,premierJour:'Dimanche',indiceDepart:7},
-     {nom:'Fevrier',nbrJours:28,premierJour:'Mercredi',indiceDepart:3},
-     {nom:'Mars',nbrJours:31,premierJour:'Mercredi',indiceDepart:3},
-     {nom:'Avril',nbrJours:30,premierJour:'Samedi',indiceDepart:6},
-     {nom:'Mai',nbrJours:31,premierJour:'Lundi',indiceDepart:1},
-     {nom:'Juin',nbrJours:30,premierJour:'Jeudi',indiceDepart:4},
-     {nom:'Juillet',nbrJours:31,premierJour:'Samedi',indiceDepart:6},
-     {nom:'Aout',nbrJours:31,premierJour:'Mardi',indiceDepart:2},
-     {nom:'Septembre',nbrJours:30,premierJour:'Vendredi',indiceDepart:5},
-     {nom:'Octobre',nbrJours:31,premierJour:'Dimanche',indiceDepart:7},
-     {nom:'Novembre',nbrJours:30,premierJour:'Mercredi',indiceDepart:3},
-     {nom:'Décembre',nbrJours:31,premierJour:'Vendredi',indiceDepart:5},
+     {nom:'Janvier',nbrJours:31,premierJour:'Dimanche',indiceDepart:7,saison:'hiver',saisonImg:'bg-mois-hiver'},
+     {nom:'Fevrier',nbrJours:28,premierJour:'Mercredi',indiceDepart:3,saison:'hiver',saisonImg:'bg-mois-hiver'},
+     {nom:'Mars',nbrJours:31,premierJour:'Mercredi',indiceDepart:3,saison:'hiver',saisonImg:'bg-mois-hiver'},
+     {nom:'Avril',nbrJours:30,premierJour:'Samedi',indiceDepart:6,saison:'printemps',saisonImg:'bg-mois-printemps'},
+     {nom:'Mai',nbrJours:31,premierJour:'Lundi',indiceDepart:1,saison:'printemps',saisonImg:'bg-mois-printemps'},
+     {nom:'Juin',nbrJours:30,premierJour:'Jeudi',indiceDepart:4,saison:'printemps',saisonImg:'bg-mois-printemps'},
+     {nom:'Juillet',nbrJours:31,premierJour:'Samedi',indiceDepart:6,saison:'ete',saisonImg:'bg-mois-ete'},
+     {nom:'Aout',nbrJours:31,premierJour:'Mardi',indiceDepart:2,saison:'ete',saisonImg:'bg-mois-ete'},
+     {nom:'Septembre',nbrJours:30,premierJour:'Vendredi',indiceDepart:5,saison:'ete',saisonImg:'bg-mois-ete'},
+     {nom:'Octobre',nbrJours:31,premierJour:'Dimanche',indiceDepart:7,saison:'automne',saisonImg:'bg-mois-automne'},
+     {nom:'Novembre',nbrJours:30,premierJour:'Mercredi',indiceDepart:3,saison:'automne',saisonImg:'bg-mois-automne'},
+     {nom:'Décembre',nbrJours:31,premierJour:'Vendredi',indiceDepart:5,saison:'automne',saisonImg:'bg-mois-automne'},
     ]);
   }
   

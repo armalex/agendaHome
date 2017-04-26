@@ -10,4 +10,6 @@ export interface MoisModel {
     nbrJours: number;
     premierJour:string ;
     indiceDepart : number;
+    saison: string;
+    saisonImg:string;
  }
