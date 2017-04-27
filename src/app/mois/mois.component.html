@@ -21,13 +21,12 @@ Commentaire pour cette partie du code template pour le composant
         <div class="col-sm-1 janvier_caption"></div> 
         <div class="col-sm-1"></div> 
         <div class="col-sm-1"></div>
-        
     </div>
 
     <div (click)="onButtonClick($event)" class="row" style="margin-top: 0px;">     
         <div class="col-sm-1"></div>
         <div class="col-sm-1"></div>  
-        <div (click)="onButtonClick($event)" class="col-sm-1 mois-en-forme" *ngFor="let semaine of semaines">{{semaine}}</div>
+        <div (click)="onButtonClick($event)" class="col-sm-1 mois-en-forme" [ngStyle]="{color: moisModel.couleurTitre}" *ngFor="let semaine of semaines">{{semaine}}</div>
         <div class="col-sm-1"></div>
         <div class="col-sm-1"></div> 
         <div class="col-sm-1"></div> 
