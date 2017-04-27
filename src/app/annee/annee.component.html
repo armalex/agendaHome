@@ -21,7 +21,7 @@ Le mois courrant est Févrie Fevier est en gras
  <div class="row">      
     <div class="col-md-4 " align="center" style="background-color:darktgray;" *ngFor="let mois of moisModel |slice:3:6;let i = index">   
          <div *ngIf="i+3 === moisCourant"> 
-             <b><pr-mois [moisModel]="mois"></pr-mois></b>
+             <pr-mois [moisModel]="mois"></pr-mois>
          </div> 
           <div *ngIf="i+3 !=moisCourant"> 
                <pr-mois [moisModel]="mois"></pr-mois>

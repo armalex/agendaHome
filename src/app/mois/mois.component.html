@@ -15,27 +15,14 @@ Commentaire pour cette partie du code template pour le composant
     <div (click)="onButtonClick($event)" class="row " style="margin-top: 0px;" > 
         <div class="col-sm-1 "></div> 
         <div class="col-sm-1 "></div> 
-        <div class="col-sm-4 janvier_caption" >  {{ moisModel.nom| uppercase }}</div>
-         <div class="col-sm-3 janvier_caption">2017</div> 
+<!--    <div class="col-sm-4 janvier_caption" [ngStyle]="{color:moisModel.couleurTitre}" >{{moisModel.nom | uppercase}} </div>-->
+        <div class="col-sm-4 janvier_caption" [ngStyle]="{color:moisModel.couleurTitre}" [textContent]="moisModel.nom | uppercase"></div>
+         <div class="col-sm-3 janvier_caption" [ngStyle]="{color:moisModel.couleurTitre}" >2017</div> 
         <div class="col-sm-1 janvier_caption"></div> 
         <div class="col-sm-1"></div> 
         <div class="col-sm-1"></div>
         
     </div>
-    
-<!--    
-        <div class="row " style="margin-top: 0px;">     
-        <div class="col-sm-1"></div>
-        <div class="col-sm-1"></div>  
-        <div class="col-sm-1 janvier_caption"></div> 
-        <div class="col-sm-1 janvier_caption"></div> 
-        <div class="col-sm-1 janvier_caption">{{ moisModel.nom| uppercase }}</div>
-        <div class="col-sm-1 janvier_caption"></div>
-        <div class="col-sm-1 janvier_caption"></div> 
-        <div class="col-sm-1 janvier_caption"></div> 
-        <div class="col-sm-1"></div> 
-        <div class="col-sm-1"></div> 
-    </div>-->
 
     <div (click)="onButtonClick($event)" class="row" style="margin-top: 0px;">     
         <div class="col-sm-1"></div>

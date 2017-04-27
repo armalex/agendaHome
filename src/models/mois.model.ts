@@ -12,4 +12,5 @@ export interface MoisModel {
     indiceDepart : number;
     saison: string;
     saisonImg:string;
+    couleurTitre:string;
  }
