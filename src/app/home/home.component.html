@@ -1,10 +1,11 @@
-<span class = "btn btn-primary btn-lg btn-block">{{title}} </span>
 
-<span class = "btn btn-primary btn-lg btn-block">
-    <h3> Nous sommes en {{annee}}  </h3>
-  <!--  <button (click)="previousMonth()">Previous</button>
-    <button  (click)="nextMonth()">Next</button>-->
-</span>
 
-<pr-annee></pr-annee>
-
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <pr-menu></pr-menu>
+    <h3 class="panel-title" align="center">{{title | uppercase}}  {{annee}}</h3>
+  </div>
+  <div class="panel-body">
+    <pr-annee></pr-annee>
+  </div>
+</div>
