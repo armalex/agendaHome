@@ -1,12 +1,14 @@
 import { Injectable } from '@angular/core';
 import { MoisModel } from '../models/mois.model';
+import { Http } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/operator/map';
 import 'rxjs/add/observable/of';
 
 @Injectable()
 export class MoisService {
   moisModel:MoisModel;
-  constructor() { }
+  constructor(private http: Http) { }
   
   list():  Observable <Array<MoisModel>>{
     return Observable.of ([
@@ -23,6 +25,12 @@ export class MoisService {
      {nom:'Novembre',nbrJours:30,premierJour:'Mercredi',indiceDepart:3,saison:'automne',saisonImg:'bg-mois-automne',couleurTitre:'orange'},
      {nom:'Décembre',nbrJours:31,premierJour:'Vendredi',indiceDepart:5,saison:'automne',saisonImg:'bg-mois-automne',couleurTitre:'orange'},
     ]);
+  }
+  
+  
+  listHttp(): Observable<Array<MoisModel>> {
+    return this.http.get('http://localhost:9991/rest/helloensma/search?name=janvier&indice=1')
+      .map(res => res.json());
   }
   
   debutMois(nomMois:string):Observable<string[]>{
