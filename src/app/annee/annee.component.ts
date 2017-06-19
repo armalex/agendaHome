@@ -24,12 +24,12 @@ constructor(private moisService: MoisService) {
   }
   
   
-  nextYear(){
+nextYear(){
      
-  }
+}
 
-  previousYear(){
+previousYear(){
      
-  } 
+} 
  
 }

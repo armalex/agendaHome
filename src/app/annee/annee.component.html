@@ -6,6 +6,9 @@ changer une proprété html saus certaine condition
 Le mois courrant est  Fevier est en gras
 -->
 
+<div>[moisModel]</div>
+
+
 <div class="container">
         <div class="row">  
             <div class="col-md-4" align="center" style="background-color:whitesmoke;"  *ngFor="let mois of moisModel |slice:0:3;let i = index">
@@ -30,7 +33,6 @@ Le mois courrant est  Fevier est en gras
     </div>
 </div>
 
- 
 <div class="row">      
     <div class="col-md-4 " align="center" style="background-color:darktgray;" *ngFor="let mois of moisModel|slice:6:9;let i = index">   
          <div *ngIf="i+6 === moisCourant"> 

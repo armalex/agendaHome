@@ -1,12 +1,15 @@
 import { Injectable } from '@angular/core';
 import { MoisModel } from '../models/mois.model';
-import { Http } from '@angular/http';
+import { Http,Headers } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/observable/of';
 
+
 @Injectable()
 export class MoisService {
+    
+  private baseUrl: string = 'http://localhost:9991/rest/helloensma/annee';
   moisModel:MoisModel;
   constructor(private http: Http) { }
   
@@ -28,10 +31,35 @@ export class MoisService {
   }
   
   
+//    getAll(): Observable<MoisModel[]>{
+//    let moi$ = this.http
+//      .get(`${this.baseUrl}?name=janvier&indice=1`, {headers: this.getHeaders()})
+//      return moi$;
+//  }
+
+  
+  private getHeaders(){
+    // I included these headers because otherwise FireFox
+    // will request text/html instead of application/json
+    let headers = new Headers();
+    headers.append('Accept', 'application/json');
+    return headers;
+  }
+
+  
+  
   listHttp(): Observable<Array<MoisModel>> {
     return this.http.get('http://localhost:9991/rest/helloensma/search?name=janvier&indice=1')
       .map(res => res.json());
   }
+  
+  
+  listeJours(indiceMois:string):Observable<string[]>{
+  
+            return this.http.get('http://localhost:9991/rest/helloensma/search?name=janvier&indice='+indiceMois)
+      .map(res => res.json());
+  }
+  
   
   debutMois(nomMois:string):Observable<string[]>{
       // calsul du mois a retourner en fonction du parametre
