@@ -19,7 +19,7 @@ moisModel: Array<MoisModel> = [];
 constructor(private moisService: MoisService) {
 }
   ngOnInit() {
-    this.moisService.listHttp().subscribe(moisModel => this.moisModel = moisModel);
+    this.moisService.list().subscribe(moisModel => this.moisModel = moisModel);
   
   }
   
