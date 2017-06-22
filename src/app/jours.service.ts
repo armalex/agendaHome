@@ -9,9 +9,9 @@ export class JoursService {
   constructor() { }
 
 
- list():  Observable <Array<JourModel>>{
+ list():  Observable <Array<JourModel>> {
     return Observable.of([
-     {nom:'Janvier',premier:true,jourDuMois:2,saint:'st-patrick'}
+     {nom: 'Janvier', premier: true, jourDuMois: 2, saint: 'st-patrick'}
     ]);
   }
 

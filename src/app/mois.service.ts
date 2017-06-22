@@ -61,6 +61,13 @@ export class MoisService {
   }
 
 
+  listeJoursFeries(indiceMois: string): Observable<string[]> {
+
+            return this.http.get('http://localhost:9991/rest/helloensma/search?name=janvier&indice=' + indiceMois)
+      .map(res => res.json());
+  }
+
+
   debutMois(nomMois: string): Observable<string[]> {
       // calsul du mois a retourner en fonction du parametre
       // this.moisModel={nom:'Fevrier',nbrJours:28,premierJour:'Mercredi',indiceDepart:3};
