@@ -9,27 +9,27 @@ import { MoisModel } from '../../models/mois.model';
   styleUrls: ['./annee.component.css']
 })
 export class AnneeComponent implements OnInit {
-  
-annee :string = '2017';
-moisComponent : MoisComponent;
+
+annee: string = '2017';
+moisComponent: MoisComponent;
 @Input() moisCourant: number = 10;
 
 moisModel: Array<MoisModel> = [];
- 
+
 constructor(private moisService: MoisService) {
 }
   ngOnInit() {
     this.moisService.list().subscribe(moisModel => this.moisModel = moisModel);
-  
+
   }
-  
-  
-nextYear(){
-     
+
+
+nextYear() {
+
 }
 
-previousYear(){
-     
-} 
- 
+previousYear() {
+
+}
+
 }
