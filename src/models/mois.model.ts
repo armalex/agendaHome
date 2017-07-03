@@ -7,6 +7,7 @@ import { JourModel } from '../models/jour.model';
 
 export interface MoisModel {
     nom: string ;
+    indice: number;
     nbrJours: number;
     premierJour: string ;
     indiceDepart: number;
