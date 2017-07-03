@@ -69,7 +69,7 @@ export class MoisService {
 
 
   debutMois(nomMois: string): Observable<string[]> {
-      // calsul du mois a retourner en fonction du parametre
+      // calcul du mois a retourner en fonction du parametre
       // this.moisModel={nom:'Fevrier',nbrJours:28,premierJour:'Mercredi',indiceDepart:3};
 
       // let essai: string = "0";

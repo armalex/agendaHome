@@ -22,7 +22,7 @@ saison: string = 'bg-mois-printemps';
 
 
   ngOnInit() {
-      this.moisService.debutMois(this.moisModel.nom).subscribe(listeJours => this.listeJours = listeJours);
+      this.moisService.debutMoisDynamique(this.moisModel.indice).subscribe(listeJours => this.listeJours = listeJours);
 
      }
 
@@ -35,7 +35,6 @@ saison: string = 'bg-mois-printemps';
     this.moisClicked.emit(this.moisModel);
         console.log(this.moisModel);
         console.log(event);
-
   }
 
 }
