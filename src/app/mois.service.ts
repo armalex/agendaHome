@@ -15,18 +15,18 @@ export class MoisService {
 
   list():  Observable <Array<MoisModel>> {
     return Observable.of ([
-     {nom: 'Janvier', nbrJours: 31, premierJour: 'Dimanche', indiceDepart: 7, saison: 'hiver', saisonImg: 'bg-mois-hiver', couleurTitre: 'white'},
-     {nom: 'Fevrier', nbrJours: 28, premierJour: 'Mercredi', indiceDepart: 3, saison: 'hiver', saisonImg: 'bg-mois-hiver', couleurTitre: 'white'},
-     {nom: 'Mars', nbrJours: 31, premierJour: 'Mercredi', indiceDepart: 3, saison: 'hiver', saisonImg: 'bg-mois-hiver', couleurTitre: 'white'},
-     {nom: 'Avril', nbrJours: 30, premierJour: 'Samedi', indiceDepart: 6, saison: 'printemps', saisonImg: 'bg-mois-printemps', couleurTitre: 'springgreen'},
-     {nom: 'Mai', nbrJours: 31, premierJour: 'Lundi', indiceDepart: 1, saison: 'printemps', saisonImg: 'bg-mois-printemps', couleurTitre: 'springgreen'},
-     {nom: 'Juin', nbrJours: 30, premierJour: 'Jeudi', indiceDepart: 4, saison: 'printemps', saisonImg: 'bg-mois-printemps', couleurTitre: 'springgreen'},
-     {nom: 'Juillet', nbrJours: 31, premierJour: 'Samedi', indiceDepart: 6, saison: 'ete', saisonImg: 'bg-mois-ete', couleurTitre: 'red'},
-     {nom: 'Aout', nbrJours: 31, premierJour: 'Mardi', indiceDepart: 2, saison: 'ete', saisonImg: 'bg-mois-ete', couleurTitre: 'red'},
-     {nom: 'Septembre', nbrJours: 30, premierJour: 'Vendredi', indiceDepart: 5, saison: 'ete', saisonImg: 'bg-mois-ete', couleurTitre: 'red'},
-     {nom: 'Octobre', nbrJours: 31, premierJour: 'Dimanche', indiceDepart: 7, saison: 'automne', saisonImg: 'bg-mois-automne', couleurTitre: 'orange'},
-     {nom: 'Novembre', nbrJours: 30, premierJour: 'Mercredi', indiceDepart: 3, saison: 'automne', saisonImg: 'bg-mois-automne', couleurTitre: 'orange'},
-     {nom: 'Décembre', nbrJours: 31, premierJour: 'Vendredi', indiceDepart: 5, saison: 'automne', saisonImg: 'bg-mois-automne', couleurTitre: 'orange'},
+     {nom: 'Janvier', indice: 1 ,nbrJours: 31, premierJour: 'Dimanche', indiceDepart: 7, saison: 'hiver', saisonImg: 'bg-mois-hiver', couleurTitre: 'white'},
+     {nom: 'Fevrier',indice: 2 ,nbrJours: 28, premierJour: 'Mercredi', indiceDepart: 3, saison: 'hiver', saisonImg: 'bg-mois-hiver', couleurTitre: 'white'},
+     {nom: 'Mars', indice: 3 , nbrJours: 31, premierJour: 'Mercredi', indiceDepart: 3, saison: 'hiver', saisonImg: 'bg-mois-hiver', couleurTitre: 'white'},
+     {nom: 'Avril', indice: 4 , nbrJours: 30, premierJour: 'Samedi', indiceDepart: 6, saison: 'printemps', saisonImg: 'bg-mois-printemps', couleurTitre: 'springgreen'},
+     {nom: 'Mai', indice: 5, nbrJours: 31, premierJour: 'Lundi', indiceDepart: 1, saison: 'printemps', saisonImg: 'bg-mois-printemps', couleurTitre: 'springgreen'},
+     {nom: 'Juin', indice :6 , nbrJours: 30, premierJour: 'Jeudi', indiceDepart: 4, saison: 'printemps', saisonImg: 'bg-mois-printemps', couleurTitre: 'springgreen'},
+     {nom: 'Juillet', indice: 7 , nbrJours: 31, premierJour: 'Samedi', indiceDepart: 6, saison: 'ete', saisonImg: 'bg-mois-ete', couleurTitre: 'red'},
+     {nom: 'Aout', indice: 8 , nbrJours: 31, premierJour: 'Mardi', indiceDepart: 2, saison: 'ete', saisonImg: 'bg-mois-ete', couleurTitre: 'red'},
+     {nom: 'Septembre', indice: 9 , nbrJours: 30, premierJour: 'Vendredi', indiceDepart: 5, saison: 'ete', saisonImg: 'bg-mois-ete', couleurTitre: 'red'},
+     {nom: 'Octobre', indice: 10 , nbrJours: 31, premierJour: 'Dimanche', indiceDepart: 7, saison: 'automne', saisonImg: 'bg-mois-automne', couleurTitre: 'orange'},
+     {nom: 'Novembre', indice: 11 , nbrJours: 30, premierJour: 'Mercredi', indiceDepart: 3, saison: 'automne', saisonImg: 'bg-mois-automne', couleurTitre: 'orange'},
+     {nom: 'Décembre', indice: 12 , nbrJours: 31, premierJour: 'Vendredi', indiceDepart: 5, saison: 'automne', saisonImg: 'bg-mois-automne', couleurTitre: 'orange'},
     ]);
   }
 
@@ -48,8 +48,8 @@ export class MoisService {
 
 
 
-  listHttp(): Observable<Array<MoisModel>> {
-    return this.http.get('http://localhost:9991/rest/helloensma/search?name=janvier&indice=1')
+  listHttp(indiceMois: number): Observable<Array<MoisModel>> {
+    return this.http.get('http://localhost:9991/rest/helloensma/search?indice=' + indiceMois)
       .map(res => res.json());
   }
 
@@ -157,4 +157,12 @@ export class MoisService {
                 '26', '27', '28', '29', '30', '31']);
       }
   }
+
+
+
+ debutMoisDynamique(indiceMois: number): Observable<string[]> {
+
+      return this.http.get('http://localhost:9991/rest/helloensma/search?name=janvier&indice=' + indiceMois)
+             .map(res => res.json());
+   }
 }
