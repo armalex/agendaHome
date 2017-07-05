@@ -14,7 +14,10 @@ import { JourComponent } from './jour/jour.component';
 import { MoisService } from './mois.service';
 import { HomeComponent } from './home/home.component';
 import { AideComponent } from './aide/aide.component';
-import { AmxtryitComponent } from './amxtryit/amxtryit.component';
+import { AmxtryitComponent } from './amx/amxChangeBGcolor/amxtryit.component';
+import { HighlightDirective } from '../amxDirectives/AmxHighlight.directive';
+import { AmxclickeventComponent } from './amx/amxClickEvent/amxclickevent.component';
+
 
 @NgModule({
   declarations: [
@@ -26,13 +29,15 @@ import { AmxtryitComponent } from './amxtryit/amxtryit.component';
     JourComponent,
     HomeComponent,
     AideComponent,
-    AmxtryitComponent
+    AmxtryitComponent,
+    HighlightDirective,
+    AmxclickeventComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(ROUTES)
+    RouterModule.forRoot(ROUTES, {useHash: true})
   ],
   providers: [MoisService],
   bootstrap: [AppComponent]

@@ -10,13 +10,14 @@ import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AnneeComponent } from './annee/annee.component';
 import { AideComponent } from './aide/aide.component';
-import { AmxtryitComponent } from './amxtryit/amxtryit.component';
+import { AmxtryitComponent } from './amx/amxChangeBGcolor/amxtryit.component';
+import { AmxclickeventComponent } from './amx/amxClickEvent/amxclickevent.component';
 
 
 export const ROUTES: Routes = [
-  { path: '**', component: HomeComponent },
-  { path: 'amx', component: AmxtryitComponent },
-  { path: 'aide', component: AideComponent }
+  { path: 'home', component: HomeComponent },
+  { path: 'amx/amxChangeBGcolor', component: AmxtryitComponent },
+  { path: 'amx/amxClickEvent', component: AmxclickeventComponent },
+  { path: 'aide', component: AideComponent },
+   { path: '**', component: HomeComponent }
 ];
-
-
