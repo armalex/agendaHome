@@ -11,6 +11,7 @@ export class MoisComponent implements OnInit {
 
 @Input() moisModel: MoisModel;
 @Input() moisIndice: number;
+@Input() moisNom: number;
 
 @Output() moisClicked = new EventEmitter<MoisModel>();
 
@@ -22,7 +23,11 @@ saison: string = 'bg-mois-printemps';
 
 
   ngOnInit() {
-      this.moisService.debutMoisDynamique(this.moisModel.indice).subscribe(listeJours => this.listeJours = listeJours);
+
+     // acces webservice 
+     // this.moisService.debutMoisDynamique(this.moisModel.indice).subscribe(listeJours => this.listeJours = listeJours);
+     // acces statique 
+     this.moisService.debutMois(this.moisModel.nom).subscribe(listeJours => this.listeJours = listeJours);
 
      }
 
