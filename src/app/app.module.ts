@@ -14,6 +14,7 @@ import { JourComponent } from './jour/jour.component';
 import { MoisService } from './mois.service';
 import { HomeComponent } from './home/home.component';
 import { AideComponent } from './aide/aide.component';
+import { AmxtryitComponent } from './amxtryit/amxtryit.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { AideComponent } from './aide/aide.component';
     SemaineComponent,
     JourComponent,
     HomeComponent,
-    AideComponent
+    AideComponent,
+    AmxtryitComponent
   ],
   imports: [
     BrowserModule,

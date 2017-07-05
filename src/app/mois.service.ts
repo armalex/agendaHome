@@ -15,12 +15,12 @@ export class MoisService {
 
   list():  Observable <Array<MoisModel>> {
     return Observable.of ([
-     {nom: 'Janvier', indice: 1 ,nbrJours: 31, premierJour: 'Dimanche', indiceDepart: 7, saison: 'hiver', saisonImg: 'bg-mois-hiver', couleurTitre: 'white'},
-     {nom: 'Fevrier',indice: 2 ,nbrJours: 28, premierJour: 'Mercredi', indiceDepart: 3, saison: 'hiver', saisonImg: 'bg-mois-hiver', couleurTitre: 'white'},
+     {nom: 'Janvier', indice: 1 , nbrJours: 31, premierJour: 'Dimanche', indiceDepart: 7, saison: 'hiver', saisonImg: 'bg-mois-hiver', couleurTitre: 'white'},
+     {nom: 'Fevrier', indice: 2 , nbrJours: 28, premierJour: 'Mercredi', indiceDepart: 3, saison: 'hiver', saisonImg: 'bg-mois-hiver', couleurTitre: 'white'},
      {nom: 'Mars', indice: 3 , nbrJours: 31, premierJour: 'Mercredi', indiceDepart: 3, saison: 'hiver', saisonImg: 'bg-mois-hiver', couleurTitre: 'white'},
      {nom: 'Avril', indice: 4 , nbrJours: 30, premierJour: 'Samedi', indiceDepart: 6, saison: 'printemps', saisonImg: 'bg-mois-printemps', couleurTitre: 'springgreen'},
      {nom: 'Mai', indice: 5, nbrJours: 31, premierJour: 'Lundi', indiceDepart: 1, saison: 'printemps', saisonImg: 'bg-mois-printemps', couleurTitre: 'springgreen'},
-     {nom: 'Juin', indice :6 , nbrJours: 30, premierJour: 'Jeudi', indiceDepart: 4, saison: 'printemps', saisonImg: 'bg-mois-printemps', couleurTitre: 'springgreen'},
+     {nom: 'Juin', indice : 6 , nbrJours: 30, premierJour: 'Jeudi', indiceDepart: 4, saison: 'printemps', saisonImg: 'bg-mois-printemps', couleurTitre: 'springgreen'},
      {nom: 'Juillet', indice: 7 , nbrJours: 31, premierJour: 'Samedi', indiceDepart: 6, saison: 'ete', saisonImg: 'bg-mois-ete', couleurTitre: 'red'},
      {nom: 'Aout', indice: 8 , nbrJours: 31, premierJour: 'Mardi', indiceDepart: 2, saison: 'ete', saisonImg: 'bg-mois-ete', couleurTitre: 'red'},
      {nom: 'Septembre', indice: 9 , nbrJours: 30, premierJour: 'Vendredi', indiceDepart: 5, saison: 'ete', saisonImg: 'bg-mois-ete', couleurTitre: 'red'},
