@@ -19,5 +19,5 @@ constructor(private el: ElementRef) { }
 private highlight(BGcolor: string, color: string) {
   this.el.nativeElement.style.backgroundColor = BGcolor;
   this.el.nativeElement.style.color = color;
-}
+  }
 }

@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
@@ -17,6 +17,7 @@ import { AideComponent } from './aide/aide.component';
 import { AmxtryitComponent } from './amx/amxChangeBGcolor/amxtryit.component';
 import { HighlightDirective } from '../amxDirectives/AmxHighlight.directive';
 import { AmxclickeventComponent } from './amx/amxClickEvent/amxclickevent.component';
+import { AmxFormComponent } from './amx/amxform/amxform.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { AmxclickeventComponent } from './amx/amxClickEvent/amxclickevent.compon
     AideComponent,
     AmxtryitComponent,
     HighlightDirective,
-    AmxclickeventComponent
+    AmxclickeventComponent,
+    AmxFormComponent
   ],
   imports: [
     BrowserModule,

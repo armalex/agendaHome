@@ -12,12 +12,14 @@ import { AnneeComponent } from './annee/annee.component';
 import { AideComponent } from './aide/aide.component';
 import { AmxtryitComponent } from './amx/amxChangeBGcolor/amxtryit.component';
 import { AmxclickeventComponent } from './amx/amxClickEvent/amxclickevent.component';
+import { AmxFormComponent } from './amx/amxform/amxform.component';
 
 
 export const ROUTES: Routes = [
-  { path: 'home', component: HomeComponent },
+  { path: 'amx/home', component: HomeComponent },
   { path: 'amx/amxChangeBGcolor', component: AmxtryitComponent },
   { path: 'amx/amxClickEvent', component: AmxclickeventComponent },
-  { path: 'aide', component: AideComponent },
-   { path: '**', component: HomeComponent }
-];
+  { path: 'amx/amxForm', component: AmxFormComponent },
+  { path: 'amx/aide', component: AideComponent },
+  { path: '**', component: HomeComponent }
+ ];
