@@ -1,26 +1,27 @@
  
-<h1>{{title}}</h1>
+<h1>{{titre}}</h1>
 <div class="container">
    
-    <form>
+    <form [formGroup]="myform">
       <div class="form-group">
         <label for="First name">Name</label>
         <input type="text" class="form-control" id="name" required>
       </div>
 
       <div class="form-group">
-        <label for="Last name ">Alter Ego</label>
-        <input type="text" class="form-control" id="alterEgo">
+        <label for="Last name ">Prenom</label>
+        <input type="text" class="form-control" id="alterEgo" minlength="10">
+        <!--  <p *ngIf="myform.controls.name.firstname">Ce champs est nécessaire</p> -->
       </div>
       
       <div class="form-group">
    		 <label>Email</label>
-    		<input type="email"	class="form-control" >
+    		<input type="email"	class="form-control"  >
   	  </div>
 		
 		<div class="form-group">
     		<label>Password</label>
-   			 <input type="password" class="form-control">
+   			 <input type="password" class="form-control" maxlength="20">
  	 	</div>
 		
       <button type="submit" class="btn btn-success">Submit</button>

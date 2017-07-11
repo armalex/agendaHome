@@ -21,8 +21,10 @@ import { AmxFormComponent } from './amx/amxform/amxform.component';
 import { AgmCoreModule } from '@agm/core';
 import { GOOGLE_MAPS_PROVIDERS } from 'angular2-google-map/core';
 
+
 import { ExponentialStrengthPipe } from './amxTools/amxPipes/exponentialstrength.pipe';
 import { AmxgooglemapComponent } from './amxgooglemap/amxgooglemap.component';
+
 
 
 @NgModule({
@@ -45,6 +47,7 @@ import { AmxgooglemapComponent } from './amxgooglemap/amxgooglemap.component';
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpModule,
     RouterModule.forRoot(ROUTES, {useHash: true}),
     AgmCoreModule.forRoot()

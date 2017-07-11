@@ -28,6 +28,7 @@ export class AmxFormComponent implements OnInit {
     'German',
   ];
   myform: FormGroup;
+  titre: string = 'Formulaire de saisie';
 
 
   ngOnInit() {
