@@ -12,6 +12,7 @@ import { AnneeComponent } from './annee/annee.component';
 import { AideComponent } from './aide/aide.component';
 import { AmxtryitComponent } from './amx/amxChangeBGcolor/amxtryit.component';
 import { AmxclickeventComponent } from './amx/amxClickEvent/amxclickevent.component';
+import { AmxgooglemapComponent } from './amxgooglemap/amxgooglemap.component';
 import { AmxFormComponent } from './amx/amxform/amxform.component';
 
 
@@ -20,6 +21,7 @@ export const ROUTES: Routes = [
   { path: 'amx/amxChangeBGcolor', component: AmxtryitComponent },
   { path: 'amx/amxClickEvent', component: AmxclickeventComponent },
   { path: 'amx/amxForm', component: AmxFormComponent },
+  { path: 'amx/amxgooglemap', component: AmxgooglemapComponent },
   { path: 'amx/aide', component: AideComponent },
   { path: '**', component: HomeComponent }
  ];

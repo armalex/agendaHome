@@ -18,11 +18,11 @@ import { AmxtryitComponent } from './amx/amxChangeBGcolor/amxtryit.component';
 import { HighlightDirective } from '../amxDirectives/AmxHighlight.directive';
 import { AmxclickeventComponent } from './amx/amxClickEvent/amxclickevent.component';
 import { AmxFormComponent } from './amx/amxform/amxform.component';
-import { ExponentialstrengthpipePipe } from '../amxPipes/exponentialstrengthpipe.pipe.spec';
-import {GOOGLE_MAPS_PROVIDERS} from 'angular2-google-map/core';
-import { AmxchangecolorPipe } from '../amxPipes/amxchangecolor.pipe';
-import { ExponentialstrengthPipe } from './amxTools/amxPipes/exponentialstrength.pipe';
+import { AgmCoreModule } from '@agm/core';
+import { GOOGLE_MAPS_PROVIDERS } from 'angular2-google-map/core';
 
+import { ExponentialStrengthPipe } from './amxTools/amxPipes/exponentialstrength.pipe';
+import { AmxgooglemapComponent } from './amxgooglemap/amxgooglemap.component';
 
 
 @NgModule({
@@ -39,18 +39,15 @@ import { ExponentialstrengthPipe } from './amxTools/amxPipes/exponentialstrength
     HighlightDirective,
     AmxclickeventComponent,
     AmxFormComponent,
-    ExponentialstrengthpipePipe,
-    AmxchangecolorPipe,
-    ExponentialstrengthPipe
+    ExponentialStrengthPipe,
+    AmxgooglemapComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     RouterModule.forRoot(ROUTES, {useHash: true}),
-     AgmCoreModule.forRoot({
-      apiKey: 'YOUR_GOOGLE_MAPS_API_KEY'
-    })
+    AgmCoreModule.forRoot()
   ],
   providers: [MoisService],
   bootstrap: [AppComponent]
