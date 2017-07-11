@@ -1,0 +1,13 @@
+<h1>{{titre}}</h1>
+
+<!-- this creates a google map on the page with the given lat/lng from -->
+<!-- the component as the initial center of the map: -->
+<agm-map [latitude]="lat" [longitude]="lng">
+ 	<agm-map 
+          *ngFor="let m of markers; let i = index"
+          (markerClick)="clickedMarker(m.label, i)"
+          [latitude]="m.lat"
+          [longitude]="m.lng"
+          (dragEnd)="markerDragEnd(m, $event)">
+        <agm-map>
+</agm-map>

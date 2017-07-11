@@ -14,7 +14,8 @@ import { AmxtryitComponent } from './amx/amxChangeBGcolor/amxtryit.component';
 import { AmxclickeventComponent } from './amx/amxClickEvent/amxclickevent.component';
 import { AmxgooglemapComponent } from './amxgooglemap/amxgooglemap.component';
 import { AmxFormComponent } from './amx/amxform/amxform.component';
-
+import { AmxregisterComponent } from './amx/amxregister/amxregister.component';
+import { AmxcodedrivenformComponent } from './amx/amxcodedrivenform/amxcodedrivenform.component';
 
 export const ROUTES: Routes = [
   { path: 'amx/home', component: HomeComponent },
@@ -23,5 +24,7 @@ export const ROUTES: Routes = [
   { path: 'amx/amxForm', component: AmxFormComponent },
   { path: 'amx/amxgooglemap', component: AmxgooglemapComponent },
   { path: 'amx/aide', component: AideComponent },
+  { path: 'amx/amxRegister', component: AmxregisterComponent },
+  { path: 'amx/amxRegisterCode', component: AmxcodedrivenformComponent },
   { path: '**', component: HomeComponent }
  ];

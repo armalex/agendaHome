@@ -24,6 +24,8 @@ import { GOOGLE_MAPS_PROVIDERS } from 'angular2-google-map/core';
 
 import { ExponentialStrengthPipe } from './amxTools/amxPipes/exponentialstrength.pipe';
 import { AmxgooglemapComponent } from './amxgooglemap/amxgooglemap.component';
+import { AmxregisterComponent } from './amx/amxregister/amxregister.component';
+import { AmxcodedrivenformComponent } from './amx/amxcodedrivenform/amxcodedrivenform.component';
 
 
 
@@ -43,6 +45,8 @@ import { AmxgooglemapComponent } from './amxgooglemap/amxgooglemap.component';
     AmxFormComponent,
     ExponentialStrengthPipe,
     AmxgooglemapComponent,
+    AmxregisterComponent,
+    AmxcodedrivenformComponent,
   ],
   imports: [
     BrowserModule,
